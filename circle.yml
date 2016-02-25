@@ -2,7 +2,7 @@ deployment:
   staging:
     branch: master
     heroku:
-      appname: XXXXXXXXXXXXXXX
+      appname: XXXXXXXXXXXXX
 
 dependencies:
   override:

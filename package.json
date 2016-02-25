@@ -3,7 +3,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\"",
+    "test": "mocha test",
     "start": "node server",
     "postinstall": "gulp compile"
   },
@@ -18,5 +18,8 @@
     "webpack-stream": "^3.1.0",
     "webpack-dev-server": "^1.14.1"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5"
+  }
 }
