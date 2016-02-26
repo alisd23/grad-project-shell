@@ -29,8 +29,6 @@ gulp.task('compile', ['webpack']);
 gulp.task('server', function() {
   const server = liveServer.new('server.js');
   server.start();
-  // Restart server when server file changes
-  gulp.watch(paths.SERVER, () => server.start());
 });
 
 

@@ -1,14 +1,8 @@
-
 const path = require('path');
 const express = require('express');
-const MongoClient = require('mongodb').MongoClient;
-const ObjectId = require('mongodb').ObjectID;
 
 // process.env.PORT is heroku's assigned port
-const PORT          = process.env.PORT || 8000;
-const DATABASE_NAME = 'XXXXXXXXXX';
-const url           = process.env.DATABASE_URL ||
-                      `mongodb://localhost:27017/${DATABASE_NAME}`;
+const PORT = process.env.PORT || 8000;
 
 const app = express();
 
@@ -31,6 +25,6 @@ app.listen(PORT, function(error) {
   if (error) {
     console.error(error);
   } else {
-    console.info('==> 🌎 Backend server listening on port %s.', PORT);
+    console.info(`==> 🌎 Backend server listening on port ${PORT}.`);
   }
 });
